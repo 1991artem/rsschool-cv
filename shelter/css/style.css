@@ -1,0 +1,1215 @@
+@media screen  (min-width: 1280px){
+    .body{
+        max-width: 1280px;
+        width: 1280px;
+    } 
+}
+.body {
+    position: relative;
+    
+    width: 100%;
+    max-height: 3796px;
+    height: 3796px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    outline: none;
+ }
+/*Container
+==============================*/
+
+/*First_Page
+==============================*/
+.first_page_conteiner{
+    position: absolute;
+    /* max-width: 1280px; */
+    width: 93.75%;
+    height: 23.92%;
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+}
+
+/*Header
+==============================*/
+.headep_page{
+    position: absolute;
+    top: 6.61%;
+    width: 100%;
+    height: 6.6%;
+    margin: 0px auto;
+    z-index: 1000;
+}
+.all_logo{
+    position: absolute;
+    width: 15.33%;
+    height: 100%;
+    margin: 0px 0px;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+
+    /* logo_title */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 2.56vw; */
+    line-height: 110%;
+    /* or 35px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-primary */
+    
+    color: #F1CDB3;
+}
+.logo_text{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 60%;
+    left: 2%;
+    margin-bottom: 0px;
+    
+    /* logo_subtitle */
+    
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 1vw; */
+    font-size: 1vw;
+    line-height: 100%;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    
+    /* color-light-xl */
+    
+    color: #FFFFFF;
+
+}
+
+/* Navi
+======================================== */
+.navi_menu{
+    position: absolute;
+    width: 483px;
+    height: 50%;
+    right: 0%;
+    top: 26.6%;
+    display: flex;
+    align-items: center;
+}
+.link_link{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* paragraph-l */
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 1.3vw; */
+    font-size: 1.2vw;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+       
+    /* color-dark-s */
+     
+    color: #CDCDCD;
+    opacity: 1;
+        
+    /* Inside auto layout */
+     
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.link_link:hover{
+    text-decoration: underline;  
+    opacity: 0.6; 
+}
+.link_1{
+    position: absolute;
+    width: 14.5%;
+    height: 100%;
+    right: 0%;
+    padding: auto;
+    
+}
+.link_2{
+    position: absolute;
+    width: 25.5%;
+    height: 100%;
+    margin-left: 55%;
+    padding: auto;
+}
+.link_3{
+    position: absolute;
+    width: 27.5%;
+    height: 100%;
+    margin-left: 0%;
+    padding: auto;
+}
+.link_4{
+    position: absolute;
+    width: 14%;
+    height: 100%;
+    margin-left: 34%;
+    padding: auto;
+}
+/* Start page
+======================================== */
+.start_page{
+    position: absolute;
+    height: 23.92%;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0px;    
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.start_page_screen{
+    position: absolute;
+    width: 93.75%;
+    height: 80.17%;
+    left: 3.125%;
+    bottom: 0px;
+
+}
+.start_page_content{
+    position: absolute;
+    width: 38.33%;
+    height: 44.23%;
+    left: 0px;
+    top: 22.39%;
+}
+.first_screen_puppy{
+    position: absolute;
+    width: 58.17%;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+}
+.start_page_content_head{
+    position: absolute;
+    width: 67.39%;
+    height: 35.4%;
+    left: 0px;
+    top: 0px;
+    
+    /* h2 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.4vw;
+    line-height: 130%;
+    /* or 57px */
+    
+    display: flex;
+    align-items: center;
+    
+    /* color-light-xl */
+    
+    color: #FFFFFF;
+
+}
+.start_page_content_subhead{
+    /* Subheading */
+
+
+    position: absolute;
+    width: 100%;
+    height: 22.4%;
+    left: 0px;
+    bottom: 29.2%;
+    
+    /* paragraph-l */
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 160%;
+    /* or 24px */
+    
+    display: flex;
+    align-items: center;
+    
+    /* color-dark-s */
+    
+    color: #CDCDCD;
+}
+.start_page_content_button{
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3vw 3.5vw;
+
+    /* paragraph-l */
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 160%;
+    /* or 24px */
+
+    position: absolute;
+    width: 45%;
+    height: 16.15%;
+    left: 27.5%;
+    bottom: 0px;
+
+    /* color-primary */
+
+    background: #F1CDB3;
+    border-radius: 7.8vw;
+    text-decoration:none;
+    color: #545454;
+
+}
+.start_page_content_button:hover{
+    background: #ebb792;
+}
+.about{
+    position: absolute;
+    height: 14.49%;
+    left: 0%;
+    right: 0%;
+    top: 23.92%;;
+    
+    /* color-light-xl */
+    
+    background: #FFFFFF;
+
+}
+.about_content_conteiner{
+    position: absolute;
+    width: 93.75%;
+    height: 69.39%;
+    left: 3.125%;
+    top: 13.6%;
+}
+.about_content{
+    position: absolute;
+    width: 35.83%;
+    height: 93.14%;
+    left: 49.58%;
+    top: 0px;
+
+    /* paragraph-l */
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 160%;
+    /* or 24px */
+    
+    /* color-dark-xl */
+    
+    color: #4C4C4C;
+}
+.about_img{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 14.58%;
+    top: 0px;
+
+}
+.about_content_head{
+    /* Heading */
+
+
+    position: absolute;
+    width: 100%;
+    height: 23.7%;
+    left: 0px;
+    top: 0px;
+    
+    /* h3 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 130%;
+    /* or 45px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.about_content_subhead_1{
+    /* Subheading */
+
+
+    position: absolute;
+    width: 100%;
+    height: 25.26%;
+    left: 0px;
+    top: 30.26%;
+}
+.about_content_subhead_2{
+    position: absolute;
+    width: 100%;
+    height: 25.26%;
+    left: 0px;
+    top: 62.1%;
+}
+
+/* Pets
+======================================== */
+
+.pets_page{
+    position: absolute;
+    height: 23.1%;
+    left: 0%;
+    right: 0%;
+    top: 39.41%;
+    
+    /* color-light-l */
+    
+    background: #F6F6F6;
+}
+.pets_page_content{
+    position: absolute;
+    width: 93.75%;
+    height: 79.48%;
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+    top: 9.12%;
+
+}
+.pets_page_content_head{
+    position: absolute;
+    width: 40%;
+    height: 12.91%;
+    margin-left: 30%;
+    top: 0px;
+    
+    /* h3 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 130%;
+    /* or 45px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.pets_page_slider{
+    position: absolute;
+    width: 100%;
+    height: 62.41%;
+    left: 0px;
+    top: 21.5%;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.pets_page_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    
+    position: absolute;
+    width: 21.75%;
+    height: 7.46%;
+    left: 39.17%;
+    bottom:0%;
+    
+    /* color-primary */
+    
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: 0;
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 130%;
+
+    /* identical to box height, or 22px */
+    
+    letter-spacing: 0.06em;
+    
+    /* color-dark-3xl */
+    
+    text-decoration:none;
+    color: #545454;
+    
+    
+    /* Inside auto layout */
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0.7vw 0px;
+
+}
+.pets_page_button:hover{
+    background: #ebb792;
+}
+.pets_page_slider_button_arrow_left{
+    /* button_arrow */
+
+
+    /* Auto layout */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7vw 1.4vw;
+    
+    position: absolute;
+    width: 4.33%;
+    height: 11.95%;
+    left: 0px;
+    top: 44.14%;
+    
+    /* color-primary */
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 7.8vw;
+}
+
+.pets_page_slider_button_arrow_right{
+    /* button_arrow */
+
+
+    /* Auto layout */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7vw 1.4vw;
+    
+    position: absolute;
+    width: 4.33%;
+    height: 11.95%;
+    right: 0%;
+    top: 44.14%;
+    
+    /* color-primary */
+    
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+
+}
+.pets_page_slider_card_1{
+    position: absolute;
+    width: 22.5%;
+    height: 100%;
+    left: 8.75%;
+    top: 0px;
+    
+    /* color-light-s */
+    
+    background: #FAFAFA;
+    border-radius: 0.7vw;
+}
+.pets_page_slider_card_2{
+    position: absolute;
+    width: 22.5%;
+    height: 100%;
+    left: 38.75%;
+    top: 0px;
+    
+    /* color-light-s */
+    
+    background: #FAFAFA;
+    border-radius: 0.7vw;
+}
+.pets_page_slider_card_3{
+    position: absolute;
+    width: 22.5%;
+    height: 100%;
+    left: 68.75%;
+    top: 0%;
+    
+    /* color-light-s */
+    
+    background: #FAFAFA;
+    border-radius: 0.7vw;
+}
+.pets_page_slider_button{
+    /* button_primary */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    width: 69.26%;
+    height: 11.43%;
+    left: 15.37%;
+    top: 77%;
+
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 45px;
+    
+    /* color-primary */
+    
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 130%;
+    /* identical to box height, or 22px */
+
+    letter-spacing: 0.06em;
+
+    /* color-dark-3xl */
+
+    color: #292929;
+}
+.pets_page_slider_card_1:hover{
+    border: 2px solid #f5bb91;
+    color: #949191; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pets_page_slider_card_2:hover {
+    border: 2px solid #f5bb91;
+    color: #949191; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.pets_page_slider_card_3:hover{
+    border: 2px solid #f5bb91;
+    color: #949191; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.pets_page_slider_card_text{
+    /* Katrine */
+
+
+    position: absolute;
+    width: 27.4%;
+    height: 5%;
+    left: 36.296%;
+    top: 65.934%;
+    
+    /* pets-card-title */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.pets_page_slider_card_img{
+    position: absolute;
+    width: 100%;
+    height: 62%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 37.93%;
+    border-radius: 0.7vw 0.7vw 0vw 0vw;
+}
+
+/* Help
+======================================== */
+
+.help_page{
+    /* Help */
+    position: absolute;
+    height: 16.096%;
+    left: 0%;
+    right: 0%;
+    top: 62.513%;
+
+    /* color-light-xl */
+
+    background: #FFFFFF;
+}
+.help_page_content{
+    position: absolute;
+    width: 93.75%;
+    height: 67.594%;
+    left: 3.125%;
+    top: 13%;
+}
+.help_page_content_head{
+    position: absolute;
+    width: 26.67%;
+    height: 21.79%;
+    left: 38.83%;
+    top: 0px;
+    
+    /* h3 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 130%;
+    /* or 45px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.help_page_content_list{
+    position: absolute;
+    width: 85.5%;
+    height: 68%;
+    left: 7.25%;
+    bottom: 0;
+    flex-wrap: wrap;
+
+    /* h4 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    opacity: 1;
+}
+.help_page_content_list_logo{
+    position: absolute;
+    width: 73.2%;
+    height: 53%;
+    left: 13.4%;
+    top: 0px;
+}
+.help_page_content_logo:hover{   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0.7;
+}
+.help_page_content_list_food{
+    position: absolute;
+    width: 8%;
+    height: 40.2%;
+    left: 0px;
+    top: 0px;
+}
+.help_page_content_list_food_text{
+    /* Text */
+
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0px;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_transportation{
+    position: absolute;
+    width: 14.61%;
+    height: 40.2%;
+    left: 19.69%;
+    top: 0px;
+}
+.help_page_content_list_transportation_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0px;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_toys{
+    position: absolute;
+    width: 10.85%;
+    height: 40.2%;
+    left: 49%;
+    top: 0px;
+}
+.help_page_content_list_toys_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_cup{
+    position: absolute;
+    width: 14.91%;
+    height: 40.2%;
+    left: 67.55%;
+    top: 0px;
+}
+.help_page_content_list_cup_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;    
+}
+.help_page_content_list_shampoos{
+    position: absolute;
+    width: 9.85%;
+    height: 40.2%;
+    left: 92.788%;
+    top: 0px;
+}
+.help_page_content_list_shampoos_text{ 
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_vitamins{
+    position: absolute;
+    width: 12%;
+    height: 40.2%;
+    left: 8.19%;
+    top: 58.78%;
+}
+.help_page_content_list_vitamins_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_medicines{
+    position: absolute;
+    width: 9.85%;
+    height: 40.2%;
+    left: 28.56%;
+    top: 58.78%;
+}
+.help_page_content_list_medicines_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_collars{
+    position: absolute;
+    width: 16.08%;
+    height: 40.2%;
+    left: 50.1%;
+    top: 58.78%;
+
+}
+.help_page_content_list_collars_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+.help_page_content_list_areas{
+    position: absolute;
+    width: 13.94%;
+    height: 40.2%;
+    left: 77.88%;
+    top: 58.78%;
+}
+.help_page_content_list_areas_text{
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.6%;
+    color: #424141;
+}
+
+/* donation_page 
+==============================================*/
+
+.donation_page{
+    /* Donation */
+
+    position: absolute;
+    height: 12.17%;
+    left: 0%;
+    right: 0%;
+    top: 78.609%;
+    
+    /* color-light-l */
+    
+    background: #F6F6F6;
+}
+.donation_page_content{
+    position: absolute;
+    width: 71.48%;
+    height: 61.04%;
+    left: 14.3%;
+    top: 17.32%;
+}
+.donation_page_content_dog{
+    position: absolute;
+    width: 55.2%;
+    height: 92.55%;
+    left: 0px;
+    top: 3.9%;
+}
+.donation_page_content_content{
+    position: absolute;
+    width: 41.53%;
+    height: 100%;
+    left: 58.47%;
+    top: 0px;
+}
+.donation_page_content_content_hed{
+    position: absolute;
+    width: 78.95%;
+    height: 31.92%;
+    left: 0px;
+    top: 0px;
+    
+    /* h3 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7vw;
+    line-height: 130%;
+    /* or 45px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.donation_page_content_content_subhed{
+    position: absolute;
+    width: 86.79%;
+    height: 6%;
+    left: 0px;
+    top: 39%;
+    
+    /* h5 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.17vw;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+}
+.donation_page_content_content_card{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.9vw 1.2vw;
+    
+    position: absolute;
+    width: 91.84%;
+    height: 15.25%;
+    left: 0px;
+    top: 52.13%;
+    
+    /* color-primary */
+    
+    background: #F1CDB3;
+    border-radius: 0.7vw;
+}
+.donation_page_content_content_cardnumber{
+    position: absolute;
+    width: 78.5%;
+    height: 53.5%;
+    left: 17.2%;
+    top: 23.25%;
+    
+    /* h4 */
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
+.donation_page_content_content_cardimg{
+    /* credit-card */
+
+    position: absolute;
+    width: 8.6%;
+    height: 53.5%;
+    left: 4%;
+    top: 23.25%;
+
+}
+.donation_page_content_content_card:hover{   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.donation_page_content_content_info{
+    position: absolute;
+    width: 100%;
+    height: 25.5%;
+    left: 0px;
+    top: 74.46%;
+    
+    /* donation-description */
+    
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+    /* or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* color-dark-m */
+    
+    color: #B2B2B2;
+}
+/* Footer
+===================================================== */
+
+.footer{
+    position: absolute;
+    height: 9.22%;
+    left: 0%;
+    right: 0%;
+    top: 90.78%;
+    background:radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size:cover;
+}
+.footer_content{
+    position: absolute;
+    width: 93.75%;
+    height: 88.57%;
+    left: 3.125%;
+    bottom: 0px;
+}
+.footer_content_contacts{
+    position: absolute;
+    width: 23.17%;
+    height: 75.48%;
+    left: 0px;
+    top: 5.16%;
+}
+.footer_content_locate{
+    position: absolute;
+    width: 23.17%;
+    height: 75.48%;
+    left: 36.5%;
+    top: 5.16%;
+}
+.footer_pappy{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+.footer_content_title{
+    position: absolute;
+    width: 100%;
+    height: 38.46%;
+    left: 0px;
+    top: 0px;
+    
+    /* h3 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 130%;
+    /* or 45px */
+    
+    letter-spacing: 0.06em;
+    
+    /* color-light-xl */
+    
+    color: #FFFFFF;
+}
+.footer_content_contacts_title_mail{
+    position: absolute;
+    width: 90%;
+    height: 13.68%;
+    left: 0px;
+    top: 55.5%;
+}
+.footer_content_text{
+    position: absolute;
+    width: 76%;
+    height: 71.875%;
+    left: 20%;
+    top: 30%;
+    
+    /* h4 */
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    
+    letter-spacing: 0.06em;
+    
+    /* color-primary */
+    
+    color: #F1CDB3;
+}
+.footer_content_icon{
+    position: absolute;
+    width: 15.9%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.footer_content_contacts_title_mail:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer_content_contacts_title_phone{
+    position: absolute;
+    width: 90%;
+    height: 13.68%;
+    left: 0px;
+    bottom: 0;
+}
+.footer_content_contacts_title_phone:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer_content_locate1{
+    position: absolute;
+    width: 90%;
+    height: 13.68%;
+    left: 0px;
+    top: 55.5%;
+}
+.footer_content_locate1:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer_content_locate2{
+    position: absolute;
+    width: 90%;
+    height: 13.68%;
+    left: 0px;
+    bottom: 0%;
+}
+.footer_content_locate2:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
