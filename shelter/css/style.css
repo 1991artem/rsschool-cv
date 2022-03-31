@@ -1,17 +1,32 @@
-@media screen  (min-width: 1280px){
-    .body{
-        max-width: 1280px;
-        width: 1280px;
-    } 
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 .body {
     position: relative;
     
     width: 100%;
-    max-height: 3796px;
     height: 3796px;
     margin-left: auto;
     margin-right: auto;
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 *, *:after, *:before {
     box-sizing: border-box;
@@ -27,7 +42,6 @@ a {
 ==============================*/
 .first_page_conteiner{
     position: absolute;
-    /* max-width: 1280px; */
     width: 93.75%;
     height: 23.92%;
     margin-left: 3.125%;
@@ -46,7 +60,7 @@ a {
 }
 .all_logo{
     position: absolute;
-    width: 15.33%;
+    width: 22.33%;
     height: 100%;
     margin: 0px 0px;
 }
@@ -60,6 +74,7 @@ a {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
+    font-size: 2.56vw;
     /* font-size: 2.56vw; */
     line-height: 110%;
     /* or 35px */
@@ -85,7 +100,7 @@ a {
     font-style: normal;
     font-weight: 400;
     /* font-size: 1vw; */
-    font-size: 1vw;
+    font-size: 1.1vw;
     line-height: 100%;
     /* identical to box height */
     
@@ -229,7 +244,6 @@ a {
     /* color-light-xl */
     
     color: #FFFFFF;
-
 }
 .start_page_content_subhead{
     /* Subheading */
@@ -438,26 +452,6 @@ a {
     height: 62.41%;
     left: 0px;
     top: 21.5%;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
 }
 .pets_page_button{
     display: flex;
@@ -515,7 +509,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.7vw 1.4vw;
+    padding: 0.75vw 1.4vw;
     
     position: absolute;
     width: 4.33%;
@@ -526,7 +520,21 @@ a {
     /* color-primary */
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
-    border-radius: 7.8vw;
+    border-radius: 7.8vw;  
+}
+.pets_page_slider_button_arrow_left:hover {
+    animation: pets_page_slider_button_arrow_left 1s linear infinite;
+}
+@keyframes pets_page_slider_button_arrow_left {
+    0% {
+        left:0;
+    }
+    50% {
+        left:1vw;
+    }
+    100% {
+        left:0;
+    }
 }
 
 .pets_page_slider_button_arrow_right{
@@ -538,7 +546,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.7vw 1.4vw;
+    padding: 0.75vw 1.4vw;
     
     position: absolute;
     width: 4.33%;
@@ -553,6 +561,20 @@ a {
     border-radius: 100px;
     transform: rotate(-180deg);
 
+}
+.pets_page_slider_button_arrow_right:hover {
+    animation: pets_page_slider_button_arrow_right 1s linear infinite;
+}
+@keyframes pets_page_slider_button_arrow_right {
+    0% {
+        right:0;
+    }
+    50% {
+        right:1vw;
+    }
+    100% {
+        right:0;
+    }
 }
 .pets_page_slider_card_1{
     position: absolute;
@@ -637,23 +659,14 @@ a {
 
     color: #292929;
 }
-.pets_page_slider_card_1:hover{
+.pets_page_slider_card_1:hover,
+.pets_page_slider_card_2:hover,
+.pets_page_slider_card_3:hover
+{
     border: 2px solid #f5bb91;
     color: #949191; 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-.pets_page_slider_card_2:hover {
-    border: 2px solid #f5bb91;
-    color: #949191; 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.pets_page_slider_card_3:hover{
-    border: 2px solid #f5bb91;
-    color: #949191; 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 
 .pets_page_slider_card_text{
     /* Katrine */
@@ -784,7 +797,7 @@ a {
     left: 0px;
     top: 0px;
 }
-.help_page_content_list_food_text{
+.help_page_content_list_text{
     /* Text */
 
     position: absolute;
@@ -801,28 +814,12 @@ a {
     left: 19.69%;
     top: 0px;
 }
-.help_page_content_list_transportation_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0px;
-    top: 79.6%;
-    color: #424141;
-}
 .help_page_content_list_toys{
     position: absolute;
     width: 10.85%;
     height: 40.2%;
     left: 49%;
     top: 0px;
-}
-.help_page_content_list_toys_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
 }
 .help_page_content_list_cup{
     position: absolute;
@@ -831,28 +828,12 @@ a {
     left: 67.55%;
     top: 0px;
 }
-.help_page_content_list_cup_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;    
-}
 .help_page_content_list_shampoos{
     position: absolute;
     width: 9.85%;
     height: 40.2%;
     left: 92.788%;
     top: 0px;
-}
-.help_page_content_list_shampoos_text{ 
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
 }
 .help_page_content_list_vitamins{
     position: absolute;
@@ -861,28 +842,12 @@ a {
     left: 8.19%;
     top: 58.78%;
 }
-.help_page_content_list_vitamins_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
-}
 .help_page_content_list_medicines{
     position: absolute;
     width: 9.85%;
     height: 40.2%;
     left: 28.56%;
     top: 58.78%;
-}
-.help_page_content_list_medicines_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
 }
 .help_page_content_list_collars{
     position: absolute;
@@ -892,28 +857,12 @@ a {
     top: 58.78%;
 
 }
-.help_page_content_list_collars_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
-}
 .help_page_content_list_areas{
     position: absolute;
     width: 13.94%;
     height: 40.2%;
     left: 77.88%;
     top: 58.78%;
-}
-.help_page_content_list_areas_text{
-    position: absolute;
-    width: 100%;
-    height: 20.3%;
-    left: 0;
-    top: 79.6%;
-    color: #424141;
 }
 
 /* donation_page 
@@ -1010,7 +959,7 @@ a {
     padding: 0.9vw 1.2vw;
     
     position: absolute;
-    width: 91.84%;
+    width: 94.84%;
     height: 15.25%;
     left: 0px;
     top: 52.13%;
@@ -1032,7 +981,7 @@ a {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     line-height: 115%;
     /* identical to box height, or 23px */
 
@@ -1212,4 +1161,57 @@ a {
 }
 .footer_content_locate2:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Media
+====================================== */
+@media only screen and (min-width: 1024px){
+    .body{
+        width: 1280px;
+    } 
+    h1{
+        font-size: 35px;
+    }
+    .donation_page_content_content_info,
+    .logo_text{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .start_page_content_head{
+        font-size: 44px;
+        line-height: 130%;
+    }
+    .pets_page_slider_button,
+    .start_page_content_button{
+        font-size: 17px;
+        padding: 12px 40px;
+        line-height: 130%;
+    }
+    .logo,
+    .footer_content_title,
+    .donation_page_content_content_hed,
+    .help_page_content_head,
+    .pets_page_content_head,
+    .about_content_head{
+        font-size: 35px;
+        line-height: 130%
+    }
+    .link_link,
+    .about_content_subhead_1,
+    .about_content_subhead_2,
+    .pets_page_button,
+    .donation_page_content_content_subhed,
+    .start_page_content_subhead
+    {
+        font-size: 15px;
+        line-height: 160%;
+    }
+    .donation_page_content_content_cardnumber,
+    .help_page_content_list_text,
+    .pets_page_slider_card_text,
+    .footer_content_text{
+        font-size: 20px;
+        line-height: 115%;
+    }
+
 }

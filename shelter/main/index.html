@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&family=Noto+Serif+Georgian&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
                 <header class="headep_page">
                     <div class="all_logo">
                         <div class="logo">
-                            <h1 style="font-size:2vw;">Cozy House</h1>
+                            <h1>Cozy House</h1>
                         </div>
                         <div class="logo_text">Shelter for pets in Boston</div>
                     </div>
@@ -67,14 +67,18 @@
                 <div class="pets_page_content">
                     <div class="pets_page_content_head">Our friends who <br> are looking for a house</div>
                     <div class="pets_page_slider">
-                        <button id="left_slide" class="pets_page_slider_button_arrow_left" onclick="minusSlide()"></button>
-                        <button id="right_slide" class="pets_page_slider_button_arrow_right" onclick="plusSlide()"></button>
+                        <button id="left_slide" class="pets_page_slider_button_arrow_left" onclick="slider.minusSlide()">
+                            <img src="../icons/arrow-down_icon-icons.com_72377.svg" style="width: 2vw; transform: rotate(90deg);">
+                        </button>
+                        <button id="right_slide" class="pets_page_slider_button_arrow_right" onclick="slider.plusSlide()">
+                            <img src="../icons/arrow-down_icon-icons.com_72377.svg" style="width: 2vw; transform: rotate(90deg);">
+                        </button>
                         <div id="slide_1" name="slide" class="pets_page_slider_card_1">
                             <a class="pets_page_slider_button" href="../main/index_pets.html">Learn more</a>
                             <div class="pets_page_slider_card_text">Katrine</div>
                             <img class="pets_page_slider_card_img" src="../img/pets-katrine-1.png">
                         </div>
-                        <div id="slide_2" name="slide" class="pets_page_slider_card_2" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <div id="slide_2" name="slide" class="pets_page_slider_card_2">
                             <a class="pets_page_slider_button" href="../main/index_pets.html">Learn more</a>
                             <div class="pets_page_slider_card_text">Jennifer</div>
                             <img class="pets_page_slider_card_img" src="../img/pets-jennifer.png">
@@ -84,6 +88,23 @@
                             <div class="pets_page_slider_card_text">Woody</div>
                             <img class="pets_page_slider_card_img" src="../img/pets-woody.png">
                         </div>
+
+                        <div id="slide_4" name="slide" class="pets_page_slider_card_1" style="visibility: hidden;">
+                            <a class="pets_page_slider_button" href="../main/index_pets.html">Learn more</a>
+                            <div class="pets_page_slider_card_text">Fred</div>
+                            <img class="pets_page_slider_card_img" src="../img/pets-fred.png">
+                        </div>
+                        <div id="slide_5" name="slide" class="pets_page_slider_card_2" style="visibility: hidden">
+                            <a class="pets_page_slider_button" href="../main/index_pets.html">Learn more</a>
+                            <div class="pets_page_slider_card_text">Scarlet</div>
+                            <img class="pets_page_slider_card_img" src="../img/pets-scarlet.png">
+                        </div>
+                        <div id="slide_6"  name="slide" class="pets_page_slider_card_3" style="visibility: hidden;">
+                            <a class="pets_page_slider_button" href="../main/index_pets.html">Learn more</a>
+                            <div class="pets_page_slider_card_text">Timmy</div>
+                            <img class="pets_page_slider_card_img" src="../img/pets-timmy.png">
+                        </div>
+                        
                     </div>
                     <a class="pets_page_button" href="../main/index_pets.html">Get to know the rest</a>
                 </div>
@@ -93,39 +114,39 @@
                     <div class="help_page_content_head">How you can help<br>our shelter</div>
                     <div class="help_page_content_list">
                         <a class="help_page_content_list_food" href="#">
-                            <div class="help_page_content_list_food_text">Pet food</div>
+                            <div class="help_page_content_list_text">Pet food</div>
                             <img class="help_page_content_logo" src="../icons/icon-pet-food.svg">
                         </a>
                         <a class="help_page_content_list_transportation" href="#">
-                            <div class="help_page_content_list_transportation_text">Transportation</div>
+                            <div class="help_page_content_list_text">Transportation</div>
                             <img class="help_page_content_logo" src="../icons/icon-transportation-2.svg">
                         </a>
                         <a class="help_page_content_list_toys" href="#">
-                            <div class="help_page_content_list_toys_text">Toys</div>
+                            <div class="help_page_content_list_text">Toys</div>
                             <img class="help_page_content_logo" src="../icons/icon-toys.svg">
                         </a>
                         <a class="help_page_content_list_cup" href="#">
-                            <div class="help_page_content_list_cup_text">Bowls and cups</div>
+                            <div class="help_page_content_list_text">Bowls and cups</div>
                             <img class="help_page_content_logo" src="../icons/icon-bowls-and-cups-1.svg">
                         </a>
                         <a class="help_page_content_list_shampoos" href="#">
-                            <div class="help_page_content_list_shampoos_text">Shampoos</div>
+                            <div class="help_page_content_list_text">Shampoos</div>
                             <img class="help_page_content_logo" src="../icons/icon-shampoos.svg">
                         </a>
                         <a class="help_page_content_list_vitamins" href="#">
-                            <div class="help_page_content_list_vitamins_text">Vitamins</div>
+                            <div class="help_page_content_list_text">Vitamins</div>
                             <img class="help_page_content_logo" src="../icons/icon-vitamins-1.svg">
                         </a>
                         <a class="help_page_content_list_medicines" href="#">
-                            <div class="help_page_content_list_medicines_text">Medicines</div>
+                            <div class="help_page_content_list_text">Medicines</div>
                             <img class="help_page_content_logo" src="../icons/icon-medicines-1.svg">
                         </a>
                         <a class="help_page_content_list_collars" href="#">
-                            <div class="help_page_content_list_collars_text">Collars / leashes</div>
+                            <div class="help_page_content_list_text">Collars / leashes</div>
                             <img class="help_page_content_logo" src="../icons/icon-collars-leashes-1.svg">
                         </a>
                         <a class="help_page_content_list_areas" href="#">
-                            <div class="help_page_content_list_areas_text">Sleeping areas</div>
+                            <div class="help_page_content_list_text">Sleeping areas</div>
                             <img class="help_page_content_logo" src="../icons/icon-sleeping-area-1.svg">
                         </a>
                     </div>
@@ -177,5 +198,5 @@
                 </div>
             </footer>
     </body>
-    <script src="../js/shelter.js"></script>
 </html>
+<script src="../js/shelter.js"></script>
