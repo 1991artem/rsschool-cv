@@ -33,12 +33,14 @@ a {
     width: 100%;
 
     background: #FFFFFF;
+
+    z-index: 1000;
 }
 
 .sticky{
     position: fixed;
     top: 0;
-    height: 25%;
+    height: 15%;
 }
 .sticky + #pets_page {
     padding-top: 6.62%;
@@ -231,7 +233,8 @@ li{
     letter-spacing: 0.06em;
     color: #CDCDCD;
 }
-.nav_button:hover{
+#nb_3:hover,
+#nb_4:hover{
     border: 2px solid #f5bb91;
 }
 
