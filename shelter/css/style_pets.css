@@ -29,7 +29,9 @@ a {
  /* HEADER
  ================================================== */
 header{
-    height: 6.62%;
+    position: fixed;
+    top: 0;
+    height: 25%;
     width: 100%;
 
     background: #FFFFFF;
