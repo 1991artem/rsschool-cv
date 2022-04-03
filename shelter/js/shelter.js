@@ -1,47 +1,82 @@
-let slider = {};
-
-slider.slideIndex = 0;
-
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
-slider.plusSlide = function plusSlide() {
-    slider.show(slider.slideIndex += 1);
+if (typeof shelter === "object") {
+    if (shelter.pets == {}){
+        shelter.pets.name = "Puppy";
+        shelter.pets.img = "img";
+        shelter.pets.link = "#";
+    } else{
+        shelter.pets = {
+            name : "Puppy",
+            img : "img",
+            link : "../page/index_pets.html"
+            };
+    }
+} else {
+    function shelterObj (){return shelter = {}}; 
+    shelterObj();
+    shelter.pets = {
+        name : "Puppy",
+        img : "img",
+        link : "#"
+        };
+    shelter.slider = {
+        slideIndex: 1,
+        plusSlide : function() {showSlides(this.slideIndex += 1)}, /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+        minusSlide : function() {showSlides(this.slideIndex -= 1)} /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+    };
 }
 
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-slider.minusSlide = function minusSlide() {
-    slider.show(slider.slideIndex -= 1);  
-}
+let arrPets = [];
+let arrImg = [
+    "../img/pets-katrine.png", 
+    "../img/pets-jennifer.png", 
+    "../img/pets-woody.png", 
+    "../img/pets-fred.png", 
+    "../img/pets-scarlet.png",
+    "../img/pets-timmy.png",
+    "../img/pets-charly.png",
+    "../img/pets-sof.png"]
+let arrPetsName = [
+    "Katrine", 
+    "Jennifer", 
+    "Woody", 
+    "Fred", 
+    "Scarlet", 
+    "Timmy", 
+    "Charly", 
+    "Sophia"];
+arrPetsName.forEach(function (element, index) {
+    arrPets[index] = Object.create(shelter.pets);
+    arrPets[index].name = arrPetsName[index];
+    arrPets[index].img = arrImg[index];
+});
+
+
 
 /* Основная функция слайдера */
-slider.show = function showSlides(n) {
-    let slides = document.getElementsByName("slide");
-    if (n >= slides.length-1) {
-        slider.slideIndex = 0
+function showSlides(n) {
+    let slides = document.getElementsByClassName("pets_slide");
+    if (n > arrPets.length-1) {
+        shelter.slider.slideIndex = 0;
     }
-    if (n < 1) {
-        slider.slideIndex = slides.length-1
+    if (n < 0) {
+        shelter.slider.slideIndex = arrPets.length-1;
     }
-    slides.forEach(element => {
-        element.style.visibility = "hidden";
-    });
+    let count = 0;
+    let i = shelter.slider.slideIndex-1;
 
-        let arrShow = ["pets_page_slider_card_1","pets_page_slider_card_2","pets_page_slider_card_3"];
-        let count = 0;
-        let i = slider.slideIndex;
-    while (count < 3){
-            slides[i].className = arrShow[count];
-            slides[i].style.visibility = "visible";
-            count++;
-            i++;
-            if (i > slides.length-1){
-                i=0;
-            }
+    while(count < 3){
+        if (i > arrPets.length-1) {
+            i = 0;
+        }
+        if (i < 0) {
+            i = arrPets.length-1;
+        }
+        slides[count].childNodes[1].src = arrPets[i].img;
+        slides[count].childNodes[3].innerHTML = arrPets[i].name;
+        count++;
+        i++;
+        }
     }
 
-}
 /* Индекс слайда по умолчанию */
-slider.show(slider.slideIndex);
-
-slider.plusSlide();
-
-slider.minusSlide();
+showSlides(shelter.slider.slideIndex);
