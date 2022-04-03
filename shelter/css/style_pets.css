@@ -1,0 +1,350 @@
+body {
+    width: 100%;
+    height: 1812px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    outline: none;
+ }
+ /* WRAPPER
+ ================================================== */
+.wrapper{
+    height: 100%;
+    width: 93.75%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* HEADER
+ ================================================== */
+.header{
+    height: 6.62%;
+    width: 100%;
+
+    background: #FFFFFF;
+
+    z-index: 1000;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    height: 15%;
+}
+.sticky + #pets_page {
+    padding-top: 6.62%;
+  }
+.header_content{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.logo_box{
+    height: 100%;
+    width: 18.3%;
+}
+.logo{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.56vw;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    margin: 0%;
+    
+    color: #545454;
+}
+.sublogo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    
+    color: #545454;
+}
+ul {
+    display: flex;
+    width: 37%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 47.75%;
+}
+li{
+    list-style-type: none;
+    margin: auto;
+}
+.link{
+    height: 100%;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 160%;
+     
+    color: #545454;
+    opacity: 0.8;
+
+}
+.link:hover{
+    text-decoration:underline;
+    opacity: 1;
+}
+
+ /* PAGE
+ ================================================== */
+#pets_page{
+    flex: 1;
+    width: 100%;
+    background: #F6F6F6;
+}
+.pets_content{
+    width: 100%;
+    height: 86.59%;
+    margin-top: 5.96%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+.pets_hed{
+    width: 35%;
+    height: 7.75%;
+
+    margin: 0 auto;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    color: #545454;
+}
+.pets_cards_conteiner{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 1.6%;
+    justify-content: space-between;
+}
+.pets_card{
+    text-align: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+    width: 22.5%;
+    height: 47%;
+
+}
+.pets_card:hover{
+    border: 2px solid #f5bb91;
+    color: #949191; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.pets_img{
+    width: 99.9%;
+    border-radius: 0.9vw 0.9vw 0px 0px;
+}
+.pets_text{
+    width: 27.4%;
+    height: 5.3%;
+    margin: 12% auto;
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1.79vw;
+    
+    letter-spacing: 0.06em;
+    
+    color: #545454;
+}
+.pets_button{
+    padding: 4.5% 17.5%;
+    margin: 6.9% auto;
+
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 7.8vw;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 130%;
+
+    letter-spacing: 0.06em;
+
+    color: #292929;
+}
+.pets_button:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.pets_navigator{
+    width: 28.33%;
+    height: 4.47%;
+
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+
+    text-align: center;
+    justify-content: space-between;
+}
+.nav_button{
+    height: 100%;
+    width: 15.29%;
+
+    border: 2px solid #CDCDCD;
+    border-radius: 7.8vw;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.56vw;
+    line-height: 115%;
+
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+}
+#nb_3:hover,
+#nb_4:hover{
+    border: 2px solid #f5bb91;
+}
+
+ /* FOOTER
+ ================================================== */
+footer{
+    height: 19.32%;
+    width: 100%;
+    background: url(../img/footer-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.footer_content{
+    width: 100%;
+    height: 88.57%;
+
+    margin-top: 3%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.img_footer{
+    width: 25%;
+    height: 100%;
+
+    margin-top: 0%;
+}
+.footer_content_{
+    width: 25%;
+    height: 75.5%;
+
+    margin-top: 1.3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.footer_content_title{
+    width: 100%;
+    height: 38.5%;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 130%;
+    
+    letter-spacing: 0.04em;
+    
+    color: #FFFFFF;
+}
+.footer_content_info{
+    width: 90%;
+    height: 13.7%;
+
+    display: flex;
+
+    align-items: center;
+}
+.footer_content_text{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 115%;
+    
+    letter-spacing: 0.06em;
+    
+    color: #F1CDB3;
+
+    margin-left: 3%;
+}
+.footer_content_icon{
+    width: 15.9%;
+    height: 100%;
+    padding-left: 0%;
+}
+
+/* MEDIA
+========================================== */
+@media only screen and (min-width: 1280px) {
+    .wrapper{
+        width: 1200px;
+    }
+    .logo{
+        font-size: 32px;
+    }
+    .sublogo{
+        font-size: 15px;
+    }
+    .pets_button{
+        font-size: 17px;
+        padding: 12px 40px;
+        line-height: 130%;
+    }
+    .footer_content_title,
+    .pets_hed{
+        font-size: 35px;
+        line-height: 130%
+    }
+    .link{
+        font-size: 15px;
+        line-height: 160%;
+    }
+    .pets_text,
+    .nav_button,
+    .footer_content_text{
+        font-size: 17px;
+        line-height: 115%;
+    }
+    
+}
