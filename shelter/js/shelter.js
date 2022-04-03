@@ -1,3 +1,5 @@
+window.onload = function (){
+
 if (typeof shelter === "object") {
     if (shelter.pets == {}){
         shelter.pets.name = "Puppy";
@@ -80,3 +82,5 @@ function showSlides(n) {
 
 /* Индекс слайда по умолчанию */
 showSlides(shelter.slider.slideIndex);
+
+}
